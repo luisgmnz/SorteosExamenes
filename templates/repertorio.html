@@ -1,0 +1,43 @@
+
+{% extends 'base.html'%}
+{% block title %}
+Repertorio
+{% endblock %}
+{% block content %}
+
+<div class="container">
+    <h1 class="titulo-vistoso">Repertorio</h1>
+    <div style= " margin-right: 60px;">
+        <button type="button" onclick="location.reload()" class="btn btn-primary">Actualizar lista</button>
+          
+    </div>
+    <div>
+        <div>
+            <table class = "table">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">primero</th>
+                        <th scope="col">segundo</th>
+                        <th scope="col">tercero</th>
+                        <th scope="col">cuarto(1º,2º y 3º)</th>
+                        <th scope="col">cuarto(4º)</th>
+                    </tr>
+                </thead>
+                {% for x in filas %}
+                <tr>
+                    {% for s in filas[x] %}
+                    <td>{{s}}</td>
+                    {% endfor %}
+
+                    
+                </tr>
+                {% endfor %}
+              </table>
+            
+        </div>
+    </div>
+</div>
+    
+
+{% endblock %} 

@@ -1,0 +1,23 @@
+
+{% extends 'base.html'%}
+{% block title %}
+Escalas
+{% endblock %}
+{% block content %}
+<div class="container">
+
+
+    <h1 class="titulo-vistoso">Sorteo Escalas</h1>
+    <p style="text-align: center;">(Si alguna de las escalas no existe, utiliza la enarmonía correcta)</p>
+    <div style="margin-top: 40px;"></div>
+    <p>{{m|safe}}</p>
+    <div style="margin-top: 40px;"></div>
+    <div style="margin-left: 60px; margin-right: 60px;">
+        <button type="button" onclick="location.reload()" class="btn btn-primary">Nuevo sorteo de escalas</button>
+          
+    </div>
+</div>
+    
+    
+
+{% endblock %} 
